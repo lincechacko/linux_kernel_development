@@ -1,0 +1,1 @@
+savedcmd_/home/lince/linux_kernel_development/simple_kernel/hello_world.mod := printf '%s\n'   hello_world.o | awk '!x[$$0]++ { print("/home/lince/linux_kernel_development/simple_kernel/"$$0) }' > /home/lince/linux_kernel_development/simple_kernel/hello_world.mod

@@ -1,0 +1,1 @@
+savedcmd_/home/lince/linux_kernel_development/simple_kernel/modules.order := {   echo /home/lince/linux_kernel_development/simple_kernel/hello_world.o; :; } > /home/lince/linux_kernel_development/simple_kernel/modules.order

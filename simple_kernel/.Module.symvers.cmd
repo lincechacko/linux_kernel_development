@@ -1,0 +1,1 @@
+savedcmd_/home/lince/linux_kernel_development/simple_kernel/Module.symvers :=  scripts/mod/modpost -M        -o /home/lince/linux_kernel_development/simple_kernel/Module.symvers -T /home/lince/linux_kernel_development/simple_kernel/modules.order -i Module.symvers -e 
