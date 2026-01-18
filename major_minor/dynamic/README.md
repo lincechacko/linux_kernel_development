@@ -41,5 +41,5 @@ Character devices:
 
 226 drm
 
-245 new_device # This is the major number allocated
+245 new_device ** This is the major number allocated **
 
