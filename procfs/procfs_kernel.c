@@ -15,7 +15,7 @@
 dev_t device = 0;
 static struct cdev device_cdev;
 static struct class * device_class;
-
+static struct proc_dir_entry * parent;
 static int __init init_function(void)
 {
 	if(alloc_chrdev_region(&device , 1 , "new_Device") < 0)
@@ -31,6 +31,10 @@ static int __init init_function(void)
 	device_class = class_create("new_class");
 
 	device_create(device_class , NULL , device , NULL , "new_device");
+
+	parent = proc_mkdir("new_proc",NULL);
+
+	proc_create("device_proc",0666,parent , &proc_fops);
 }
 
 
