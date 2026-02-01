@@ -1,0 +1,1 @@
+savedcmd_/home/lince/linux_kernel_programming/procfs/modules.order := {   echo /home/lince/linux_kernel_programming/procfs/procfs_kernel.o; :; } > /home/lince/linux_kernel_programming/procfs/modules.order

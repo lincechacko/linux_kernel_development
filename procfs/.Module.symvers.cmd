@@ -1,0 +1,1 @@
+savedcmd_/home/lince/linux_kernel_programming/procfs/Module.symvers :=  scripts/mod/modpost -M        -o /home/lince/linux_kernel_programming/procfs/Module.symvers -T /home/lince/linux_kernel_programming/procfs/modules.order -i Module.symvers -e 
