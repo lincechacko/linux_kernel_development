@@ -12,6 +12,7 @@
 #include<linux/proc_fs.h>
 
 char dataBuffer[50] = {0};
+static int len = 1;
 
 static int device_proc_open(struct inode *newNode , struct file * newFile);
 static int device_proc_close(struct inode *newNode , struct file *newFile);
@@ -85,6 +86,15 @@ static int device_proc_close(struct inode *newNode , struct file *newFile)
 
 static ssize_t device_proc_read(struct file * newFile , char __user *buffer , size_t length , loff_t * offt)
 {
+	if(len)
+    	{
+        	len=0;
+        }
+    	else
+    	{
+         	len=1;
+        	return 0;
+   	}
 	if(copy_to_user(buffer , &dataBuffer , 50))
 	{
 		pr_err("proc file read failed\n");
