@@ -122,7 +122,7 @@ static int __init init_function(void)
 		return -1;
 	}
 
-	        //Create the kernel thread with name 'mythread'
+	        //Create the kernel thread with name 'wait thread'
         wait_thread = kthread_create(wait_function, NULL, "WaitThread");
         if (wait_thread) {
                 pr_info("Thread Created successfully\n");
